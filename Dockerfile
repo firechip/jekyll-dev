@@ -74,8 +74,6 @@ RUN apt-get update \
     && apt-get autoremove -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
-    
-WORKDIR /workspaces/jekyll-theme
 
 COPY pages-gem/.git /src/gh/pages-gem/.git
 COPY pages-gem/Gemfile* /src/gh/pages-gem/
